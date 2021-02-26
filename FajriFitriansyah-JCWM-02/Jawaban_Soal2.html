@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal No2</title>
+    <style>
+        input {
+            padding: 10px;
+        }
+
+        #table-products {
+            width: 75%;
+            border: 1px solid #16c79a;
+        }
+
+        #table-products thead {
+            background-color: #16c79a;
+            font-size: 16px;
+            color: #f8f1f1;
+        }
+
+        #table-products tr,
+        td {
+            border: 1px solid #16c79a;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Input Data</h1>
+        </legend>
+        <label>
+            Name & Price Product
+        </label>
+        <br>
+        <input type="text" name="product-name" class="input-product" placeholder="Product Name"> <input type="number"
+            name="product-price" class="input-product" placeholder="Price">
+        <br>
+        <br>
+        <label>
+            Category
+        </lable>
+        <br>
+        <input type="text" name="product-category" class="input-product" placeholder="category">
+        <h3 id="error-message"></h3>
+        <input type="button" name="button-submit" value="Submit Product" id="button-submit">
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h1>Form Products</h1>
+        </legend>
+        <table id="table-products">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Diisi dengan data kita -->
+            </tbody>
+        </table>
+    </fieldset>
+    
+    
+</body>
+<script src="Database.js"></script>
+<script src="Products.js"></script>
+
+
+</html>
